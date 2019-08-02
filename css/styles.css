@@ -24,8 +24,10 @@ li a:hover {
 }
 #home{
   background-image: url("../images/pizza.jpg");
+  background-color: transparent;
   background-size: cover;
-  height: 800px;
+  height: 900px;
+  background-attachment: fixed;
 }
 h1{
   text-align: center;
@@ -35,5 +37,22 @@ h1{
   position: absolute;
   top: 50%;
   width: 90%;
+  font-family:Lucida Console, Courier, monospace;
+  font-weight: bold;
 }
-
+h2{
+  font-size:40px;
+  text-align: center;
+}
+p{
+  font-size: 30px;
+}
+#pizza{
+  font-size: 20px;
+}
+input[type=radio] {
+  border: 1px;
+  width: 40px;
+  height: 2em;
+  transform: scale(0.8);
+}
