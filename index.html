@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PIZZA-FASTFOOD</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <link href="../Pizza-order/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../Pizza-order/css/styles.css" rel="stylesheet" type="text/css">
+    <script src="../Pizza-order/js/jquery-3.4.1.min.js"></script>
+    <script src="../Pizza-order/js/scripts.js"></script>
     <title>Address book</title>
 </head>
   <body>
@@ -26,15 +26,32 @@
         </div>
         <div id="menu">
                  <h2>MENU</h2>
-                    <form id="pizza">
-                        <div class="form-group">
+                 <div class="row">
+                     <div class="column">
+                      <form id="pizza">
+                        <div class="form-check form-check-inline">
                         <p>Choose the size of a pizza of your choice here:</p>
-                        <input type="radio" name="size" value="Small">Small.<br>
-                        <img src="">
-                        <input type="radio" name="size" value="Medium">Medium.<br>
-                        <input type="radio" name="size" value="Large">Large.<br>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Small">Small.
+                        <label class="form-check-label" for="inlineRadio1"></label><br><br>
+                        <img src="../Pizza-order/images/pizza4.jpg" style= "height:200px">    
+                        </div><br><br>
+                        <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Medium">Medium.
+                        <label class="form-check-label" for="inlineRadio2"></label><br><br>
+                        <img src="../Pizza-order/images/pizza2.jpg" style= "height:200px">
+                        </div><br><br>
+                        <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Large">Large.
+                        <label class="form-check-label" for="inlineRadio3"></label><br><br>
+                        <img src="../Pizza-order/images/pizza3.jpg" style= "height:200px">
                         </div>
-        </div>
+                      </form>  
+                     </div>  
+                      
+                </div>        
+        </div>     
+        
+        
 
   </body>
 </html>
