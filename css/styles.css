@@ -68,3 +68,23 @@ input[type=radio] {
   clear: both;
   display: table;
 }
+.form-group{
+  font-size: 20px;
+}
+input[type=checkbox] {
+  border: 1px;
+  width: 30px;
+  height: 2em;
+  transform: scale(0.8);
+}
+#submit{
+  font-size: 25px;
+  border: 1px;
+  width: 40px;
+  height: 2em;
+  transform: scale(0.8);
+}
+#reload{
+  font-size: 25px;
+  
+}

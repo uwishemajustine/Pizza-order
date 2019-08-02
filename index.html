@@ -44,13 +44,17 @@
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Large">Large.
                         <label class="form-check-label" for="inlineRadio3"></label><br><br>
                         <img src="../Pizza-order/images/pizza3.jpg" style= "height:200px">
+                        <div class="form-group"><br><br>
+                        <label for="new-number">Number of Pizza's</label>
+                        <input type="number" class="form-control" id="new-number" min="1">
+                        </div>
                         </div>
                       </form>  
                      </div>  
                       
                 </div>
                 <div class="form-group">
-                        <p>you can make a choice in this toppings;</p>
+                        <p style="font-weight:bold">You can make a choice in this toppings;</p>
                         <input type="checkbox" name="toppings" value="Cheese">Cheese.<br>
                         <input type="checkbox" name="toppings" value="Vegetarian">Vegetarian.<br>
                         <input type="checkbox" name="toppings" value="Mushrooms">Mushrooms.<br>
@@ -65,14 +69,14 @@
                           <input id="name" class="form-control" type="text">
                         </div>
                         <div class="form-group">
-                          <label for="address">Address</label>
+                          <label for="address">fullAddress</label>
                           <input id="address" class="form-control" type="text">
                         </div>
                         <div class="form-group">
                           <label for="number">Phone Number</label>
                           <input id="number" class="form-control" type="text">
-                        </div>
-                        <button type="submit">Let's get your order</button>
+                        </div><br><br>
+                        <button type="submit" id="submit" style="width:350px">Click and get your order</button>
                         <button type="submit" class="btn" id="reload">Refresh</button>
                       </form>
                       <div id="info">
