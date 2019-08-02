@@ -1,8 +1,39 @@
-#info {
-    display: none;
-  }
-  
-  .name, .address, .number {
-    font-style: italic;
-    font-weight: bold;
-  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  font-size: 30px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: transparent;
+}
+#home{
+  background-image: url("../images/pizza.jpg");
+  background-size: cover;
+  height: 800px;
+}
+h1{
+  text-align: center;
+  color: white;
+  line-height: 70px;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  width: 90%;
+}
+
