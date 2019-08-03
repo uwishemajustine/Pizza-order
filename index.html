@@ -23,42 +23,55 @@
             Just one bite and feel the taste</h1>
         </div>
         <div id="menu">
-                 <h2>MENU</h2><br><br>
+                 <h2>MENU</h2><br>
+                 <p>Choose the size of a pizza of your choice here:</p>
                  <div class="row">
+                   <form id="pizza"><br>
                      <div class="col-md-4">
-                      <form id="pizza"><br>
-                        <div class="form-check form-check-inline">
-                        <p>Choose the size of a pizza of your choice here:</p>
-                        <br><br>
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Small">Small.
-                        <label class="form-check-label" for="inlineRadio1"></label><br><br>
-                        <img src="../Pizza-order/images/pizza4.jpg" style= "height:200px">    
-                        </div>
+                             <div class="form-check form-check-inline">
+                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Small">Small.
+                             <label class="form-check-label" for="inlineRadio1"></label><br><br>
+                             <img src="../Pizza-order/images/pizza4.jpg" style= "height:200px">    
+                             </div>
                      </div>
                     <div class="col-md-4">
-                        <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Medium">Medium.
-                        <label class="form-check-label" for="inlineRadio2"></label><br><br>
-                        <img src="../Pizza-order/images/pizza2.jpg" style= "height:200px">
-                        </div>
+                             <div class="form-check form-check-inline">
+                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Medium">Medium.
+                             <label class="form-check-label" for="inlineRadio2"></label><br><br>
+                             <img src="../Pizza-order/images/pizza2.jpg" style= "height:200px">
+                             </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="Large">Large.
-                        <label class="form-check-label" for="inlineRadio3"></label><br><br>
-                        <img src="../Pizza-order/images/pizza3.jpg" style= "height:200px">
-                        </div>
+                             <div class="form-check form-check-inline">
+                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="Large">Large.
+                             <label class="form-check-label" for="inlineRadio3"></label><br><br>
+                             <img src="../Pizza-order/images/pizza3.jpg" style= "height:200px">
+                             </div>
                     </div> 
-                      </form>
+                  </form>
                  </div> 
-        </div>  
+        </div><br><br><br> 
     
                  <div class="container">
                      <div class="jumbotron">
-                            <div class="row container">
-                                    <div class="col-xs-6" style=" font-weight:bold; font-size:25px">Choose the topping you like here;</div><br><br>
-                                    <div class="col-xs-6" class="form-option">
-                                      <select required class="form-control" id="toppings">
+                            <div class="crust">
+                            <div class="col-xs-12" style=" font-weight:bold; font-size:25px">Make a choice in your favorite crust:<br><br>
+                                <div class="col-xs-12" class="form-option">
+                                  <select required class="form-control">
+                                    <option></option>
+                                    <option value="onions">Onions</option>
+                                    <option value="green peppers">Green Peppers</option>
+                                    <option value="olives">Black Olives</option>
+                                    <option value="spinach">Spinach</option>
+                                    <option value="mushrooms">Mushrooms</option>
+                                  </select> 
+                                </div>
+                            </div>
+                            </div>
+                            <div class="topping">
+                                    <div class="col-xs-12" style=" font-weight:bold; font-size:25px">Choose the topping you like here;<br><br>
+                                    <div class="col-xs-12" class="form-option">
+                                      <select required class="form-control">
                                         <option></option>
                                         <option value="onions">Onions</option>
                                         <option value="green peppers">Green Peppers</option>
@@ -70,14 +83,16 @@
                                         <option value="bacon">Canadian Bacon</option>
                                         <option value="sausage">Sausage</option>
                                       </select>
-                                    </div><br><br>
+                                    </div>
+                                    </div>
+                            </div> 
                       <ul id="responses">
                         </ul>
                         <div class="form-group" style="font-size:25px"><br><br>
                            <label for="new-number">Number of Pizza's</label>
                            <input type="number" class="form-control" id="new-number" min="1">
                         </div>
-                        <div class="form-group" style="font-size:25px">
+                        <div class="form-group" style="font-size:25px;">
                           <label for="name">Name</label>
                           <input id="name" class="form-control" type="text">
                         </div>
@@ -89,15 +104,34 @@
                           <label for="number">Phone Number</label>
                           <input id="number" class="form-control" type="text">
                         </div><br><br>
-                       
+                        <form>
+                        <div class="row"> 
+                        <div id="pickup-delivery" >
+                        <div class="col-md-6">
+                            <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Small">Delivery.
+                            <label class="form-check-label" for="inlineRadio1"></label><br>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Small">Pick-up.
+                            <label class="form-check-label" for="inlineRadio1"></label><br>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                         <br>   
                         <button type="submit" id="submit" style="width:350px">Click and get your order</button>
                         <button type="submit" class="btn" id="reload">Refresh</button>
                       </form>
                       <div id="info">
                         <p> Name:  <span class="name"></span>  Address:  <span class="address"></span>  Number:  <span class="number"></span>
                         </p>
+                    </div> 
                       </div>
-                    </div>
-                 </div>     
+                </div>
+                
+                      
   </body>
 </html>
