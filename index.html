@@ -21,8 +21,8 @@
             <li><a href="#location">Location</a></li>
          </ul><br>
             <h1>WELCOME TO JAS'S PIZZA<br>
-                ENJOY YOUR PIZZA
-            </h1>
+                ENJOY YOUR PIZZA<br>
+            Just one bite and feel the taste</h1>
         </div>
         <div id="menu">
                  <h2>MENU</h2>
@@ -44,10 +44,7 @@
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="Large">Large.
                         <label class="form-check-label" for="inlineRadio3"></label><br><br>
                         <img src="../Pizza-order/images/pizza3.jpg" style= "height:200px">
-                        <div class="form-group"><br><br>
-                        <label for="new-number">Number of Pizza's</label>
-                        <input type="number" class="form-control" id="new-number" min="1">
-                        </div>
+                        
                         </div>
                       </form>  
                      </div>  
@@ -55,6 +52,18 @@
                 </div>
                  <div class="container">
                      <div class="jumbotron">
+                            <div class="row container">
+                                    <div class="col-xs-6">Choose the topping you like here;</div>
+                                    <div class="col-xs-6" class="form-option">
+                                      <select required class="form-control" id="veggie2">
+                                        <option></option>
+                                        <option value="onions">Onions</option>
+                                        <option value="green peppers">Green Peppers</option>
+                                        <option value="olives">Black Olives</option>
+                                        <option value="spinach">Spinach</option>
+                                        <option value="mushrooms">Mushrooms</option>
+                                      </select>
+                                    </div>
                       <ul id="responses">
                         </ul>
                         <div class="form-group">
@@ -69,6 +78,10 @@
                           <label for="number">Phone Number</label>
                           <input id="number" class="form-control" type="text">
                         </div><br><br>
+                        <div class="form-group"><br><br>
+                        <label for="new-number">Number of Pizza's</label>
+                        <input type="number" class="form-control" id="new-number" min="1">
+                        </div>
                         <button type="submit" id="submit" style="width:350px">Click and get your order</button>
                         <button type="submit" class="btn" id="reload">Refresh</button>
                       </form>
