@@ -1,56 +1,28 @@
-var pizzaPrice = 0;
+# Pizza-order
+## Author
+by UWISHEMA Justine
+## Description
+This project is about ordering pizza where you put the size of the pizza you want with toppings and crust and it gives what you ordered with there prices.
+## Setup/Installation Requirements
+No special installation is required. All needed resources are included in the repository.
+To setup this project, clone the repository to a local directory and open index.html in a standard web browser.
+You may also view a live version of this site on GitHub Pages.
+## Project setup instructions
+To start using this project use the following link:
+git clone: 
+## Technologies used
+* Html
+* Css
+* Javascript
+* Jquery
+## Known Bugs
+There are no some small bugs at this time. The functionality of this site is not completely utilized (some business logic exists that is not utilized by the UI).
+## Contact Information
+If you like my project and you want to use it you can write to me in this email:
+alsenjastine@gmail.com
 
-function Pizza(size,toppings,pizzaPrice) {
-  this.size = size;
-  this.toppings = toppings;
-  this.pizzaPrice = 0;
-}
+## License info
 
-Pizza.prototype.price = function() {
-  if (this.size === "Small") {
-    this.pizzaPrice += 2;
-    console.log("sm");
-  }
-  else if (this.size === "Medium") {
-    this.pizzaPrice += 3;
-    console.log("md");
-  }
-  else if (this.size === "Large") {
-    this.pizzaPrice += 4;
-    console.log("lg");
-  }
-  if (this.toppings.indexOf("Cheese") >= 0) {
-    this.pizzaPrice += 2;
-    console.log("ch");
-  }
+MIT License
 
-  if (this.toppings.indexOf("Peanut Butter") >= 0) {
-    this.pizzaPrice += 10;
-    console.log("pb");
-
-  }
-
-  if (this.toppings.indexOf("Vegetarian") >= 0) {
-    this.pizzaPrice += 3;
-    console.log("veg");
-  }
-  if (this.toppings.indexOf("Supreme") >= 0) {
-    this.pizzaPrice += 5;
-    console.log("supr");
-  }
-  if (this.toppings.indexOf("Pepperoni") >= 0) {
-    this.pizzaPrice += 4;
-    console.log("pepp");
-
-  }
-
-  if (this.toppings.indexOf("Pepperoni" && "Vegetarian") >= 0) {
-    alert("You can not choose a combination of Pepperoni and Vegetarian");
-    $("#info").hide();
-    $("#responses").hide();
-
-  }
-
-  return this.pizzaPrice;
-  console.log("total");
-}
+ Copyright (c) 2019 Uwishema Justine
