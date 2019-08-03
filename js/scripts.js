@@ -3,6 +3,7 @@ var pizzaPrice = 0;
 function Pizza(size,toppings,pizzaPrice) {
   this.size = size;
   this.toppings = toppings;
+  this.crust = crust
   this.pizzaPrice = 0;
 }
 Pizza.prototype.price = function() {
@@ -60,5 +61,33 @@ Pizza.prototype.price = function() {
         this.pizzaPrice += $8;
         console.log("sausage");
       }
+      if (this.toppings.indexOf("chicken" && "sausage") >= 0) {
+        alert("You can not choose a combination of chicken and sausage");
+        $("#info").hide();
+        $("#responses").hide();
+    
+      }
+    
+      return this.pizzaPrice;
+      console.log("total");
     }
+    $(document).ready(function(){
+        $("form#pizza").submit(function(event){
+          event.preventDefault();
+      
+          var resultSize = $("input[type=radio][name=size]:checked").val();
+          var resultToppings = [];
+          $("input[type=checkbox][name=toppings]:checked").each(function(){
+            resultToppings.push($(this).val());
+          });
+          var newPizza = new Pizza(resultSize,resultToppings,pizzaPrice);
+          newPizza.price();
+          console.log("result");
+      
+          $("#responses").append("<li>" + "You ordered a " + newPizza.size + " " + newPizza.toppings + " pizza. " + " Your total price is " + newPizza.pizzaPrice + "</li>");
+          console.log("responses");
+
+    });
+});
+    
   
