@@ -47,6 +47,11 @@ h2{
 p{
   font-size: 30px;
 }
+#menu{
+  font-weight: bold;
+  font-size:40px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 #pizza{
   font-size: 20px;
 }
