@@ -9,6 +9,7 @@ To setup this project, clone the repository to a local directory and open index.
 You may also view a live version of this site on GitHub Pages.
 ## Project setup instructions
 To start using this project use the following link:
+
 git clone: 
 ## Technologies used
 * Html
