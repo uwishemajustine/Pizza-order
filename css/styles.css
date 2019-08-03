@@ -45,11 +45,9 @@ h2{
   text-align: center;
 }
 p{
-  font-size: 70px;
+  font-size: 30px;
   text-align: center;
-  color: white;
-  margin-top: 100px;
-  display: inline;
+  padding-top: 70px;
 }
 #menu{
   font-weight: bold;
@@ -58,34 +56,9 @@ p{
 }
 #pizza{
   font-size: 20px;
+  margin: 10px;
 }
-input[type=radio] {
-  border: 1px;
-  width: 40px;
-  height: 2em;
-  transform: scale(0.8);
-}
-.column {
-  float: left;
-  width: 35%;
-  padding:10px;
-  float: left;
-  box-sizing: border-box;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.form-group{
-  font-size: 20px;
-}
-input[type=checkbox] {
-  border: 1px;
-  width: 30px;
-  height: 2em;
-  transform: scale(0.8);
-}
+
 #submit{
   font-size: 25px;
   border: 1px;
@@ -97,3 +70,4 @@ input[type=checkbox] {
   font-size: 25px;
   
 }
+

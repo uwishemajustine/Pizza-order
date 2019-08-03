@@ -17,20 +17,19 @@
             <li><a class="active" href="#home">Home</a></li>
             <li><a href="#menu">Menu</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#about us">About us</a></li>
-            <li><a href="#location">Location</a></li>
          </ul><br>
             <h1>WELCOME TO JAS'S PIZZA<br>
                 ENJOY YOUR PIZZA<br>
             Just one bite and feel the taste</h1>
         </div>
         <div id="menu">
-                 <h2>MENU</h2>
+                 <h2>MENU</h2><br><br>
                  <div class="row">
                      <div class="col-md-4">
-                      <form id="pizza">
+                      <form id="pizza"><br>
                         <div class="form-check form-check-inline">
                         <p>Choose the size of a pizza of your choice here:</p>
+                        <br><br>
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Small">Small.
                         <label class="form-check-label" for="inlineRadio1"></label><br><br>
                         <img src="../Pizza-order/images/pizza4.jpg" style= "height:200px">    
@@ -57,9 +56,9 @@
                  <div class="container">
                      <div class="jumbotron">
                             <div class="row container">
-                                    <div class="col-xs-6">Choose the topping you like here;</div>
+                                    <div class="col-xs-6" style=" font-weight:bold; font-size:25px">Choose the topping you like here;</div><br><br>
                                     <div class="col-xs-6" class="form-option">
-                                      <select required class="form-control" id="veggie2">
+                                      <select required class="form-control" id="toppings">
                                         <option></option>
                                         <option value="onions">Onions</option>
                                         <option value="green peppers">Green Peppers</option>
@@ -71,25 +70,26 @@
                                         <option value="bacon">Canadian Bacon</option>
                                         <option value="sausage">Sausage</option>
                                       </select>
-                                    </div>
+                                    </div><br><br>
                       <ul id="responses">
                         </ul>
-                        <div class="form-group">
+                        <div class="form-group" style="font-size:25px"><br><br>
+                           <label for="new-number">Number of Pizza's</label>
+                           <input type="number" class="form-control" id="new-number" min="1">
+                        </div>
+                        <div class="form-group" style="font-size:25px">
                           <label for="name">Name</label>
                           <input id="name" class="form-control" type="text">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="font-size:25px">
                           <label for="address">fullAddress</label>
                           <input id="address" class="form-control" type="text">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="font-size:25px">
                           <label for="number">Phone Number</label>
                           <input id="number" class="form-control" type="text">
                         </div><br><br>
-                        <div class="form-group"><br><br>
-                        <label for="new-number">Number of Pizza's</label>
-                        <input type="number" class="form-control" id="new-number" min="1">
-                        </div>
+                       
                         <button type="submit" id="submit" style="width:350px">Click and get your order</button>
                         <button type="submit" class="btn" id="reload">Refresh</button>
                       </form>
