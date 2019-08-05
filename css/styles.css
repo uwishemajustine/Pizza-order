@@ -54,10 +54,7 @@ p{
   font-size:40px;
   font-family:Impact, Haettenschweiler, sans-serif;
 }
-#pizza{
-  font-size: 30px;
-  
-}
+
 input[type=radio] {
   border: 1px;
   width: 34px;
@@ -67,9 +64,11 @@ input[type=radio] {
 #submit{
   font-size: 25px;
   border: 1px;
-  width: 40px;
+  width: 75px;
   height: 2em;
   transform: scale(0.8);
+  text-align: left;
+  background-color: #0088cc; 
 }
 #reload{
   font-size: 25px;  
@@ -83,4 +82,16 @@ input[type=radio] {
   height: 1em;
   transform: scale(0.8);
 }
+#show-pizza {
+  display: none;
+}
+#pizza {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+#pizza:hover {
+  text-decoration: underline;
+}  
+
 
