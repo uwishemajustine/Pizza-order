@@ -54,7 +54,15 @@ p{
   font-size:40px;
   font-family:Impact, Haettenschweiler, sans-serif;
 }
-
+#new-number{
+  height: 55px;
+}
+#toppings{
+  height: 55px;
+}
+#crust{
+  height: 55px;
+}
 input[type=radio] {
   border: 1px;
   width: 34px;

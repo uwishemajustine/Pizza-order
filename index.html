@@ -31,19 +31,19 @@
                         <div class="jumbotron">   
                             <form id="pizza"><br>
                              <div class="form-check form-check-inline">
-                             <input class="form-check-input" type="radio" name="select" id="inlineRadio1" value="Small">Small.
+                             <input class="form-check-input" type="radio" name="size" id="inlineRadio1" value="Small">Small.
                              <label class="form-check-label" for="inlineRadio1"></label><br><br>
-                             <!-- <img src="../Pizza-order/images/pizza4.jpg" style= "height:200px">    -->
+                             <img src="../Pizza-order/images/pizza4.jpg" style= "height:200px">   
                              </div>
                              <div class="form-check form-check-inline">
-                             <input class="form-check-input" type="radio" name="select" id="inlineRadio2" value="Medium">Medium.
+                             <input class="form-check-input" type="radio" name="size" id="inlineRadio2" value="Medium">Medium.
                              <label class="form-check-label" for="inlineRadio2"></label><br><br>
-                             <!-- <img src="../Pizza-order/images/pizza2.jpg" style= "height:200px"> -->
+                             <img src="../Pizza-order/images/pizza2.jpg" style= "height:200px">
                              </div>
                              <div class="form-check form-check-inline">
-                             <input class="form-check-input" type="radio" name="select" id="inlineRadio3" value="Large">Large.
+                             <input class="form-check-input" type="radio" name="size" id="inlineRadio3" value="Large">Large.
                              <label class="form-check-label" for="inlineRadio3"></label><br><br>
-                             <!-- <img src="../Pizza-order/images/pizza3.jpg" style= "height:200px"> -->
+                             <img src="../Pizza-order/images/pizza3.jpg" style= "height:200px">
                              </div>
                     
                  
@@ -51,7 +51,6 @@
                             <div class="col-xs-12" style=" font-weight:bold; font-size:25px">Make a choice in your favorite crust:<br><br>
                                 <div class="col-xs-12" class="form-option">
                                   <select required class="form-control">
-                                    <option></option>
                                     <option value="Garlic Butter Crust">Garlic Butter Crust</option>
                                     <option value="Spicy Crust">Spicy Crust</option>
                                     <option value="Plain Crust">Plain Crust</option>
@@ -86,43 +85,25 @@
                            <label for="new-number">Number of Pizza's</label>
                            <input type="number" class="form-control" id="new-number" min="1">
                         </div>
-                        <div class="form-group" style="font-size:25px;">
-                          <label for="name">Names</label>
-                          <input id="name" class="form-control" type="text">
-                        </div>
-                        <div class="form-group" style="font-size:25px">
-                          <label for="address">fullAddress</label>
-                          <input id="address" class="form-control" type="text">
-                        </div>
-                        <div class="form-group" style="font-size:25px">
-                          <label for="number">Phone Number</label>
-                          <input id="number" class="form-control" type="text">
-                        </div><br><br>
                         <div class="row"> 
-                        <div id="pickup-delivery" >
-                        <div class="col-md-6">
-                            <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Small">Delivery
-                            <label class="form-check-label" for="inlineRadio1"></label><br>
+                            <div class="col-md-6">
+                                <button type="submit" name="Order" id="Order">Order</button><br><br>  
                             </div>
+                            <div class="col-md-6">
+                            <button type="delivery" name="delivery" id="del">Delivery</button>
+                            </div><br><br><br><br>
+                            <div id="info">
+                                <p>Your pizza total is:</p><br><br><br>
+                              </div> 
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Small">Pick up
-                            <label class="form-check-label" for="inlineRadio1"></label><br>
-                            </div>
-                        </div>
+                        
                         </div>
                         </div>
                          <br>   
-                        <button type="submit" id="submit">Order</button><br><br>
+                        
                         
                      
-                      <div id="info">
-                        <p>Your pizza total is:</p><br><br><br>
-
-                      </div> 
-                    
+                      
                   </div>   
                 </div>
             </div><br>
