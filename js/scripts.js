@@ -5,14 +5,15 @@ function Menu (size, toppings, crust) {
     this.crust = crust;
     this.toppings = toppings;
     this.number = number;
+    this.price = 0;
   }
   Menu.prototype.fullPizza = function() {
-    return this.size + " " + this.crust + " " + this.toppings + " " +this.number;
+    return this.size + " " + this.crust + " " + this.toppings + " " +this.number + " " + this.price;
   }
     // user interface logic
     $(document).ready(function() {
 
-      $("button#Order").submit(function(event) {
+      $("form#pizza").submit(function(event) {
         event.preventDefault();
         //  $("#order").click(function() {
           if ($("#inlineRadio1:checked").val()) {
@@ -32,22 +33,22 @@ function Menu (size, toppings, crust) {
         }
         
         var inputtedCrust = $("select#crust").val();
-        if ($("select#crust").val==="Garlic Butter Crust") {
+        // if ($("inputtedCrust")==="Garlic Butter Crust") {
           var cash2 = 8
-        }else if ($("select#crust").val==="Spicy Crust") {
+        // }else if ($("inputtedCrust")==="Spicy Crust") {
           var cash2 = 11
-        }else if ($("select#crust").val==="Plain Crust") {
+        // }else if ($("inputtedCrust")==="Plain Crust") {
           var cash2 = 13
-        }else if ($("select#crust").val==="Thick Crust") {
+        // }else if ($("inputtedCrust")==="Thick Crust") {
           var cash2 = 12
-        }else if ($("select#crust").val==="Flatbread Crust") {
+        // }else if ($("inputtedCrust")==="Flatbread Crust") {
           var cash2 = 14
-        }else if ($("select#crust").val==="Cheese-Stuffed Crust") {
+        // }else if ($("inputtedCrust")==="Cheese-Stuffed Crust") {
           var cash2 = 16 
-        }else {
-          alert("Refresh and order again")
-        }
-
+        // }else {
+        //   alert("Refresh and order again")
+        // }
+console.log(inputtedCrust);
         var inputtedToppings = $("select#toppings").val();
         if ($("select#toppings").val==="Onions") {
           var cash3 = 15
@@ -70,23 +71,16 @@ function Menu (size, toppings, crust) {
         }else {
           alert("Refresh and order again")
         }
-        var inputtedNumber = $("newnumber#number");
-        // console.log(inputtedNumber);
+        console.log(inputtedToppings);
+        var inputtedNumber = $("input#number");
+        console.log(inputtedNumber);
+
         var newPizza = new Menu(inputtedSize, inputtedCrust, inputtedToppings, inputtedNumber);
-        var pizzaCash = parseInt(cash1) + parseInt(cash2) + parseInt(cash3);
+        var pizzaCash = parseInt(cash1) + parseInt(cash2) + parseInt(cash3) * inputtedNumber + parseInt(price);
         var totalCash = pizzaCash + inputtedNumber;
-        var finaltotal = totalCash + 2;
-        $("ul#responses").append("<li>" +newPizza.fullPizza() + totalcash + finaltotal +"</li>");
-        // console.log(newPizza.fullPizza() )
-        // $("ul#responses").append("<li>" + "You will pay" + totalCash + $+"</li>");
-        // console.log(newPizza.pizzacash)
-        // $("#del").click(function(){
-        //   $("ul#responses").append("<li>" + "total to be paid" + total + $+"</li>");
-  //       $("#newPizza").text("");
-  // $("#newPizza").append(Pizza);
-  // var totalCash = newPizza.pizzaCash("inputtedSize", "inputtedCrust","inputtedToppings", "inputtedNumber");
-  // $("#seen").append("Your total is $" + totalCash + ".");
-  });
+        var total = totalCash + 2;
+        $("div#seen").append("<li>" +newPizza.fullPizza() + "</li>");
+      });
 });   
 
     $(document).ready(function() {
