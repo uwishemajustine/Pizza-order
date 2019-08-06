@@ -81,9 +81,9 @@ input[type=radio] {
   height: 1em;
   transform: scale(0.8);
 }
-#show-pizza {
+/* #show-pizza {
   display: none;
-}
+} */
 #pizza {
   cursor: pointer;
   font-size: 30px;

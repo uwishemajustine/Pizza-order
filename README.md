@@ -10,12 +10,13 @@ You may also view a live version of this site on GitHub Pages.
 ## Project setup instructions
 To start using this project use the following link:
 
-git clone: 
+git clone: https://uwishemajustine.github.io/Pizza-order/ 
 ## Technologies used
 * Html
 * Css
 * Javascript
 * Jquery
+* Bootstrap
 ## Known Bugs
 There are no some small bugs at this time. The functionality of this site is not completely utilized (some business logic exists that is not utilized by the UI).
 ## Contact Information
